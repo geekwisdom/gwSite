@@ -1,0 +1,60 @@
+  #message {
+        position: fixed;
+        width: 20%; /* Set your desired with */
+        z-index: 2; /* Make sure its above other items. */
+        top: 50%;
+        left: 50%;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: green;
+        margin-top: -10%; /* Changes with height. */
+        margin-left: -10%; /* Your width divided by 2. */
+        padding: 10px;
+	font-size: 250%;
+        border: 2px solid #555555;
+        background-color: #ccc;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+  #message-red {
+        position: fixed;
+        width: 20%; /* Set your desired with */
+        z-index: 2; /* Make sure its above other items. */
+        top: 50%;
+        left: 50%;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: red;
+        margin-top: -10%; /* Changes with height. */
+        margin-left: -10%; /* Your width divided by 2. */
+        padding: 10px;
+	font-size: 250%;
+        border: 2px solid #555555;
+        background-color: #ccc;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+ .box {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: green;
+        padding: 10px;
+	font-size: 250%;
+        border: 2px solid #555555;
+        background-color: #ccc;
+        border-radius: 5px;
+        text-align: left;
+    }
+
+ .boxnp {
+  	font-family: 'Droid Serif', serif;
+        font-size: 14px;
+	color: #2f2f2f;
+        background-color: #f9f7f1;
+        padding: 10px;
+        border: 3px double #2f2f2f;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+
+

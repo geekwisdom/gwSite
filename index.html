@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Welcome to Geek Wisdom. If you are reading this, then welcome to the club ! -->
+<title>Geek Wisdom - Proud to be a geek! (Level 1)</title>
+<!-- RSS Feed -->
+<link rel="alternate" type="application/rss+xml" title="Geek Wisdom - RSS" href="http://blog.geekwisdom.org/feeds/posts/default?alt=rss" />
+<!-- Standard Meta data -->
+<meta name="Author" CONTENT="Brad Detchevery">
+<meta name="Publisher" CONTENT="Brad Detchevery">
+<meta name="Content-Language" CONTENT="en-US">
+<meta name="description" content="Geek Wisdom - Proud to be  geek">
+
+
+<!-- Open Graph metadata -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Geek Wisdom" />
+<meta property="og:title" content="Geek Wisdom - Proud to be a geek! (Level 1)" />
+<meta property="og:url" content="http://geekwisdom.org" />
+<meta property="og:description" content="Geeks have inherited the earth!" />
+<meta property="og:image" content="http://geekwisdom.org/styles/gwlogosmall.png" />
+
+<!-- Twitter metadata -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@TrueGeekWisdom">
+<meta name="twitter:title" content="Geek Wisdom">
+<meta name="twitter:description" content="Geeks have inherited the earth!">
+
+
+<link rel="stylesheet" type="text/css" href="./styles/gwmain.css">
+<script type="text/javascript" src="./js/gwmain.js"></script>
+</head>
+<body background="raincode.png" bgcolor="black">
+    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+    <div id="player">
+<h1>Be Proud of your Inner Geek!</h1>
+<h2>Mission</h2>
+<p>
+The mission of GeekWisdom is to share knowledge and information (education),  to seek out new technology and new gadget’s and gizmos’ (hackers)  to boldy go where no geek has gone before.
+</p>
+
+<ul>
+<li><a href="https://blog.geekwisdom.org">Read The Blog</a></li>
+<li><a href="https://www.geekwisdom.org/vids">Watch a Random Video</a></li>
+<li><a href="https://www.geekwisdom.org/quotes">Read a Random Quote</a></li>
+<li><a href="https://www.geekwisdom.org/games">Play a Game</a></li>
+
+</ul>
+
+
+<a href="#" onClick="reset();">
+<div id="message">
+</div>
+</a>
+</div>
+<script>
+var videos=['MeabQjpkMFY','LoohIjWBWhg','O5nskjZ_GoI','HhJZfe8vFko'];
+var videopos=0;
+if (typeof(localStorage) != "undefined") 
+{
+    videopos=localStorage.getItem("videopos");
+    if (videopos == null) videopos=0;
+    if (videopos >= videos.length) videopos=0; 
+}
+var thevideo=videos[videopos];
+function PageLoad()
+ {
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+	var w=window.screen.width - 100;
+	var h=window.screen.height - 150;
+      var player;
+}
+      function onYouTubeIframeAPIReady() {
+        
+	player = new YT.Player('player', {
+          height: window.screen.height,
+          width: window.screen.width - 100,
+          videoId: thevideo,
+	  autplay:1,
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+	if (event.data ==0) { 
+           if (typeof(localStorage) !== "undefined") 
+localStorage.setItem("videopos",parseInt(videopos)+1);
+     
+setTimeout(function () { 
+window.location="http://www.patreon.com/geekwisdom";}, 1500); 
+}
+/*
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+*/
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>
+
+  </body>
+</html>
+
+

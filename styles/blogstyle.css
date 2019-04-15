@@ -1,0 +1,27 @@
+body {
+    background-color: #01050c;
+    color: #ffffff;
+    font: normal 400 20px Lato, sans-serif;
+    height: 100%;
+    margin: 0;
+    min-height: 100vh;
+}
+body {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+a {
+    color: #77e4ff;
+    text-decoration: none;
+}
+a {
+    background: transparent;
+}
+
+.ablue
+{
+color: blue;
+    text-decoration: none;
+}
