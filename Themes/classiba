@@ -1,0 +1,881 @@
+body
+{
+	word-spacing: normal;
+	text-transform: none;
+	font-family: arial, Verdana, Helvetica, sans-serif;
+	letter-spacing: normal;
+	background-color: white;
+	margin:0px;
+	padding:0px;
+}
+
+h1
+{
+	color:blue;
+	font-size: 1.8em;
+	text-transform: uppercase;
+	font-family: Verdana;
+}	
+		
+h2
+{
+	color:blue;
+	font-size: 1.4em;
+	text-transform: uppercase;
+	font-family: Verdana;
+}	
+		
+h3	{	
+	color:blue;
+	font-size: 1.58em;
+	text-transform: uppercase;
+	font-family: Verdana;
+	}	
+		
+h4	{	
+	color:blue;
+	font-size: 1.33em;
+	text-transform: uppercase;
+	font-family: Verdana;
+	}	
+		
+
+h5, dt
+{
+	font-weight: normal;
+	font-size: .9em;
+	left: 5pt;
+	word-spacing: normal;
+	direction: ltr;
+	text-indent: 60pt;
+	font-style: normal;
+	font-family: Verdana;
+	font-variant: normal;
+	text-decoration: none;
+}	
+		
+h6
+{	
+	font-style: normal;
+	font-family: verdana;
+	font-weight: normal;
+	word-spacing: normal;
+	text-transform: none;
+	letter-spacing: normal;
+}
+	
+	
+hr
+{
+	color: buttonface;
+}	
+
+tfoot,thead	{	
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	font-family: Arial, Helvetica, sans-serif;
+	}	
+		
+th	{	
+	vertical-align:	baseline;
+	font-family: Arial, Helvetica, sans-serif;
+	}	
+
+a:link
+{
+   
+	text-decoration: none;
+	color: #4863A0;
+}	
+		
+a:visited	
+{
+	text-decoration: none;
+	color:	#4863A0;
+	}	
+		
+a:active	
+{
+	text-decoration: none;
+	color:	#4863A0;
+	}	
+		
+a:hover	
+{
+	text-decoration:underline;
+	color:	orange;
+	}
+	
+small	{	
+	font-size:	.7em;
+	}	
+
+big	{	
+	font-size:	1.17em;
+	}	
+
+blockquote,pre	{	
+	font-family:	Courier New, monospace;
+	}	
+	
+
+ul li	{	
+	list-style-type:	square ;
+	}	
+
+ul li li	{	
+	list-style-type:	disc;
+	}	
+
+ul li li li	{	
+	list-style-type:	circle;
+	}	
+	
+ol li	{	
+	list-style-type:	decimal;
+	}	
+
+ol ol li
+	list-style-type:	lower-alpha;
+	}	
+
+ol ol li	{	
+	list-style-type:	lower-roman;
+	}	
+
+img 	{
+	border:none;
+	}
+
+.disabledInput
+{
+color:grey;
+background-color:white;
+cursor: not-allowed;
+}
+
+.enabledInput
+{
+color:black;
+background-color:white;
+cursor: default;
+}
+
+/*
+	**********************************************
+	* Classes for Html Controls and WEB Controls *
+	**********************************************
+*/
+
+/* This class defines the style of all Lable controls */
+.lable
+{
+	font-weight: normal;
+	font-size: 8pt;
+	color: blue;
+	vertical-align : baseline ;
+	padding-top :6px;
+}
+/* This class defines the style of bold Lable controls */
+.boldlable
+{
+	font-weight: normal;
+	font-size: 9pt;
+	font-weight:900;
+	color: blue;
+	vertical-align : baseline;
+	padding-top :6px;
+	padding-right :10px;
+}
+
+/* Title is the lable placed at the top of each page. */
+.title 
+{
+	font-weight: bold;
+	font-size: 12pt;
+	color: gray;
+	text-indent: 10pt;
+	font-family: Verdana;
+	font-variant: small-caps;
+	border: none;
+}
+.rptTitle 
+{
+	font-weight: bold;
+	font-size: 10pt;
+	color: gray;
+	font-family: Verdana;
+	font-variant: small-caps;
+	border: none;
+}
+/* This class defines the style for all the Textbox controls*/
+.txt
+{
+	font-size: 8pt;
+	vertical-align: baseline;
+	color: blue;
+	border-top-style: none;
+	border-bottom: silver 1px solid;
+	font-family: verdana;
+	border-right-style: none;
+	border-left-style: none;
+	text-align: center;
+}
+
+.dg{
+	color: blue;
+	font-family: verdana;
+	font-size: 8pt;
+	margin-left:20px;
+	background-color: white;
+	border-width:0px;
+	border-style:none ;
+}
+/* This class defines the style for all the Dropdown Lists*/
+.ddl
+{
+	font-size: 8pt;
+	color:blue;
+	font-family: Verdana;
+}
+/* This class defines the style for all the Button controls*/
+.btn
+{
+	font-size: 8pt;
+	margin-left: 10px;
+	color: blue;
+	font-family: Verdana;
+	background-color: transparent;
+}
+
+.hideGridColumn
+{
+    display:none;
+}
+/**********************************************************************/
+#headerDeviderR{
+      background: url('classic/img/bg1.GIF') no-repeat;
+}
+
+#headerDeviderL{
+    background:url('classic/img/bg2.GIF') no-repeat; 
+}
+.moneyType
+{
+    text-align:right;
+}
+
+/**********************************************************************/
+/*** Page Header Styles ***/
+.HeaderLeftLogo  {background-image: url('classic/img/leftupper.jpg');width:132px;}
+.HeaderDiv {background-image: url('classic/img/fullheader.jpg');width:900px; position:relative; height:98px; background-color:transparent; background-repeat:no-repeat; left:0px; top:0px;}
+.HeaderTitle    {font-size:1.1em; color:#4682B4; font-weight:bold; text-align:center; margin-top:10px; margin-bottom:10px;}
+.HeaderSubTitle {font-size:.9em; color:#4682B4; font-weight:bold; text-align:center; margin: 0px 0px 8px 0px}
+
+/****** Menu Styles *****/
+
+
+
+/*** Left Menu Styles ***/
+.MenuTitle  {margin-left:auto; margin-right:auto; font-size:1.2em; color:#4682B4; font-weight:bold; text-align:center;}
+.MenuTopLeft{background-image: url('classic/img/Conner1.jpg'); width:14px; height:14px; }
+.MenuTop{background-image: url('classic/img/top.jpg'); }
+.MenuTopRight{background-image: url('classic/img/Conner2.jpg'); width:14px; height:14px; }
+.MenuLeft{background-image: url('classic/img/left.jpg'); }
+.MenuRight{background-image: url('classic/img/right.jpg'); }
+.MenuBottomLeft{background-image: url('classic/img/Cl.jpg'); width:14px; height:14px; }
+.MenuBottom{background-image: url('classic/img/bottom.jpg'); }
+.MenuBottomRight{background-image: url('classic/img/Cr.jpg'); width:14px; height:14px; }
+.MenuLabel1 {font-family:arial,sans-serif,verdana; color:#FFFFFF; font-weight:bold; font-size:.8em;}
+.MenuLabel1r {font-family:arial,sans-serif,verdana; color:#000000; font-weight:bold; font-size:.8em;}
+.MenuLabel2 {font-family:arial,sans-serif,verdana; color:#4682B4; font-size:.75em; line-height:.9em;}
+.MenuHeadingTD {padding-top:10px; background-image: url('classic/img/MenuHeadBG.jpg'); padding-bottom:3px; text-align:center;}
+.MenuHeadingBATD {padding-top:10px; background-image: url('classic/img/MenuHeadBABG.jpg'); padding-bottom:3px; text-align:center;}
+.MenuHeadingRevTD {padding-top:10px; background-image: url('classic/img/MenuHeadRevBG.jpg'); padding-bottom:3px; text-align:center;}
+.MenuHeadingRepTD {padding-top:10px; background-image: url('classic/img/MenuHeadRepBG.jpg'); padding-bottom:3px; text-align:center;}
+.MenuHeadingPayTD {padding-top:10px; background-image: url('classic/img/MenuHeadPayBG.jpg'); padding-bottom:3px; text-align:center;}
+.MenuHeadingNHTD {padding-top:10px; background-image: url('classic/img/MenuHeadNHBG.jpg'); padding-bottom:3px; text-align:center;}
+.MenuHeadingResTD {padding-top:10px; background-image: url('classic/img/MenuHeadResBG.jpg'); padding-bottom:3px; text-align:center;}
+.MenuHeadingAMTD {padding-top:10px; background-image: url('classic/img/MenuHeadAMBG.jpg'); padding-bottom:3px; text-align:center;}
+.MenuItemTD {padding-top:3px; padding-bottom:3px; background-image: url('classic/img/MenuLabelBG.jpg'); text-align:center; background-color:#DEDEDE;}
+.MenuItemBATD {padding-top:3px; padding-bottom:3px; background-image: url('classic/img/MenuLabelBABG.jpg'); text-align:center; background-color:#DEDEDE;}
+.MenuItemPayTD {padding-top:3px; padding-bottom:3px; background-image: url('classic/img/MenuLabelPayBG.jpg'); text-align:center; background-color:#DEDEDE;}
+.MenuItemRevTD {padding-top:3px; padding-bottom:3px; background-image: url('classic/img/MenuLabelRevBG.jpg'); text-align:center; background-color:#DEDEDE;}
+.MenuItemNHTD {padding-top:3px; padding-bottom:3px; background-image: url('classic/img/MenuLabelNHBG.jpg'); text-align:center; background-color:#DEDEDE;}
+.MenuItemAMTD {padding-top:3px; padding-bottom:3px; background-image: url('classic/img/MenuLabelAMBG.jpg'); text-align:center; background-color:#DEDEDE;}
+.MenuItemRepTD {padding-top:3px; padding-bottom:3px; background-image: url('classic/img/MenuLabelRepBG.jpg'); text-align:center; background-color:#DEDEDE;}
+.MenuItemResTD {padding-top:3px; padding-bottom:3px; background-image: url('classic/img/MenuLabelResBG.jpg'); text-align:center; background-color:#DEDEDE;}
+
+.ReportHeadingBATD {padding-top:10px; padding-left:20px; background-image: url('classic/img/MenuHeadBABG.jpg'); background-repeat:no-repeat; padding-bottom:3px; }
+.ReportHeadingRevTD {padding-top:10px; padding-left:20px; background-image: url('classic/img/MenuHeadRevBG.jpg'); background-repeat:no-repeat; padding-bottom:3px; }
+.ReportHeadingRepTD {padding-top:10px; padding-left:20px; background-image: url('classic/img/MenuHeadRepBG.jpg'); background-repeat:no-repeat; padding-bottom:3px; }
+.ReportHeadingPayTD {padding-top:10px; padding-left:20px; background-image: url('classic/img/MenuHeadPayBG.jpg'); background-repeat:no-repeat; padding-bottom:3px; }
+.ReportHeadingNHTD {padding-top:10px; padding-left:20px; background-image: url('classic/img/MenuHeadNHBG.jpg'); background-repeat:no-repeat; padding-bottom:3px; }
+.ReportHeadingResTD {padding-top:10px; padding-left:20px; background-image: url('classic/img/MenuHeadResBG.jpg'); background-repeat:no-repeat; padding-bottom:3px; }
+.ReportHeadingAMTD {padding-top:10px; padding-left:20px; background-image: url('classic/img/MenuHeadAMBG.jpg'); background-repeat:no-repeat; padding-bottom:3px; }
+
+.WelcomeTxt {margin-left:auto; margin-right:auto; color:#000000;font-weight:bold;font-size:1.1em; margin-bottom:20px;}
+.FooterTxt {font-size:.8em; color:#4682B4; text-align:center;}
+.TitleHr1 {margin-bottom: 1px; padding-bottom: 0px; color:#4682B4; height:2px;}
+
+/*** Common Styles used for Most pages ***/
+.TitleTxt1 {background-color:#4682B4; font-family:Arial; font-weight:bold; font-size:.8em; color:#FFFFFF; padding:5px;}
+.TitleBox {background-color:#4682B4; width:300px; float:left; font-family:Arial; font-weight:bold; font-size:.8em; color:#FFFFFF; padding:5px; margin-top:-9px; margin-bottom:10px;}
+.TitleBox2 {background-color:#4682B4; width:200px; float:left; font-family:Arial; font-weight:bold; font-size:.8em; color:#FFFFFF; padding:5px; margin-top:-9px; margin-bottom:10px;}
+.TitleBox3 {background-color:#4682B4; width:390px; float:left; font-family:Arial; font-weight:bold; font-size:.8em; color:#FFFFFF; padding:5px; margin-top:-9px; margin-bottom:10px;}
+.TitleBox4 {background-color:#4682B4; width:480px; float:left; font-family:Arial; font-weight:bold; font-size:.8em; color:#FFFFFF; padding:5px; margin-top:-9px; margin-bottom:10px;}
+/*.TitleTxt1 {background-color:#B0C4DE; font-family:Arial; font-weight:bold; font-size:.8em; color:#FFFFFF; padding:5px;}*/
+.LabelTxt1 {font-family:Sans-Serif; font-size:.8em; color:#4682B4; text-align:right;}
+.LabelTxt1a {margin-left:10px; margin-right:5px; margin-bottom:2px; margin-top:-1px; font-family:Sans-Serif; font-size:.8em; color:#4682B4;}
+.LabelTxt1b {font-family:Sans-Serif; font-size:.9em; font-weight:bold; color:#4682B4;}
+.LabelTxt1comment {font-family:Sans-Serif; font-size:.7em; font-weight:normal; color:#000B8C;}
+.LabelTxt2 {font-family:Sans-Serif; font-size:.8em; font-weight:bold; color:#323232; text-align:center;}
+.LabelTxt3 {font-family:Sans-Serif; font-size:1.1em; font-weight:bold; color:#323232; text-align:center;}
+.LabelTxt4 {font-family:Sans-Serif; font-size:1.1em; font-weight:bold; color:#FF0000; text-align:center;}
+.LabelTxt5 {font-family:Sans-Serif; font-size:1em; font-weight:bold; color:#323232; text-align:center; margin-top:10px;}
+.SmallLabelTxt1 {font-family:Sans-Serif; font-size:.6em; color:#4682B4; text-align:right;}
+.CheckBoxTD {text-align:right; padding-right:245px; font-family:Sans-Serif; font-size:.8em; color:#4682B4;}
+.CheckBoxTD2 {text-align:right; padding-right:365px; font-family:Sans-Serif; font-size:.8em; color:#4682B4;}
+.LabelColumnTD {text-align:right; padding-right:5px;}
+.LabelColumnTD2 {text-align:center;}
+.LabelColumnTD2b {text-align:left; padding-left:20px; padding-top:5px;}
+.LabelColumnTD3 {text-align:right; padding-right:5px; vertical-align:top;}
+.LabelColumnHeaderTD {padding-top:10px;}
+.LabelColumnCenterTD {text-align:left; padding-left:20px; padding-top:10px; padding-bottom:2px;}
+.LabelColumnCenterTD2 {text-align:left; padding-left:5px; padding-top:10px; padding-bottom:2px;}
+.Box1 {font-family:Sans-Serif; font-size:.8em; color:#4682B4; border: solid 1px #7F9DB9;
+    text-align: center;
+}
+.Box2 {font-family:Sans-Serif; font-size:.8em; color:#4682B4; width:300px; border: solid 1px #7F9DB9;}
+.Box3 {font-family:Sans-Serif; font-size:.8em; color:#4682B4; width:140px; border: solid 1px #7F9DB9;}
+.Box3R {font-family:Sans-Serif; font-size:.8em; color:#4682B4; width:140px; border: solid 1px #7F9DB9; text-align:right; padding-right:3px;}
+.Box4 {font-family:Sans-Serif; font-size:.8em; background-color:#EFEFEF; color:#4682B4; width:140px; border: solid 1px #7F9DB9;}
+.Box4R {font-family:Sans-Serif; font-size:.8em; background-color:#EFEFEF; color:#4682B4; width:140px; border: solid 1px #7F9DB9; text-align:right; padding-right:3px;}
+.Box306 {font-family:Sans-Serif; font-size:.8em; color:#4682B4; width:306px; border: solid 1px #7F9DB9;}
+.Box336 {font-family:Sans-Serif; font-size:.8em; color:#4682B4; width:334px; border: solid 1px #7F9DB9;}
+.Box306d {font-family:Sans-Serif; font-size:.8em; color:#4682B4; background-color:#F5F5F5; width:306px; border: solid 1px #7F9DB9;}
+.Box410 {font-family:Sans-Serif; font-size:.8em; color:#4682B4; width:410px; border: solid 1px #7F9DB9;}
+.Box410d {font-family:Sans-Serif; font-size:.8em; color:#4682B4; background-color:#F5F5F5; width:410px; border: solid 1px #7F9DB9;}
+.Box482 {font-family:Sans-Serif; font-size:.8em; color:#4682B4; width:482px; border: solid 1px #7F9DB9;}
+.Box100 {font-family:Sans-Serif; font-size:.8em; color:#4682B4; width:100px; border: solid 1px #7F9DB9;}
+.Box100d {font-family:Sans-Serif; font-size:.8em; background-color:#EBEBEB; color:#000000; width:100px; border: solid 1px #7F9DB9;}
+.Box100R {font-family:Sans-Serif; text-align:right; padding-right:3px; font-size:.8em; color:#4682B4; width:100px; border: solid 1px #7F9DB9;}
+.Problem100R {font-family:Sans-Serif; text-align:right; padding-right:3px; font-size:.8em; color:#4682B4; width:100px; border: solid 2px #FF0000;}
+.Box100Rd {font-family:Sans-Serif; text-align:right; padding-right:3px; font-size:.8em; color:#000000; background-color:#EBEBEB; width:100px; border: solid 1px #7F9DB9;}
+.Box100pay {font-family:Sans-Serif; font-size:.8em; font-weight:bold; background-color:#FFFFDE; color:#000000; width:100px; border: solid 1px #7F9DB9;}
+.Problem100pay {font-family:Sans-Serif; font-size:.8em; font-weight:bold; background-color:#FFFFDE; color:#000000; width:100px; border: solid 2px #FF0000;}
+.Box100Rpay {font-family:Sans-Serif; text-align:right; font-size:.8em; font-weight:bold; background-color:#FFFFDE; color:#000000; width:100px; border: solid 1px #7F9DB9;}
+.Box120 {font-family:Sans-Serif; font-size:.8em; color:#4682B4; width:120px; border: solid 1px #7F9DB9;}
+.Box120R {font-family:Sans-Serif; text-align:right; padding-right:3px; font-size:.8em; color:#4682B4; width:120px; border: solid 1px #7F9DB9;}
+.Box120d {font-family:Sans-Serif; font-size:.8em; background-color:#F5F5F5; color:#4682B4; width:120px; border: solid 1px #7F9DB9;}
+.Box120Rd {font-family:Sans-Serif; text-align:right; padding-right:3px; font-size:.8em; background-color:#EBEBEB; color:#000000; width:120px; border: solid 1px #7F9DB9;}
+.Box120Rpay {font-family:Sans-Serif; text-align:right; font-size:.8em; font-weight:bold; background-color:#FFFFDE; color:#000000; width:120px; border: solid 1px #7F9DB9;}
+.Box40 {font-family:Sans-Serif; font-size:.8em; color:#4682B4; width:40px; border: solid 1px #7F9DB9;}
+.Box40d {font-family:Sans-Serif; font-size:.8em; background-color:#EBEBEB; color:#000000; width:40px; border: solid 1px #7F9DB9;}
+.Box60d {font-family:Sans-Serif; font-size:.8em; background-color:#F5F5F5; color:#4682B4; width:60px; border: solid 1px #7F9DB9;}
+.Button1 {width:140px; margin-left:2px; margin-right:2px;}
+.Button2 {width:100px; margin-left:2px; margin-right:2px;}
+.Button3 {width:200px; font-size:9pt; height:28px; margin-left:2px; margin-right:2px;}
+.ButtonTD {padding-left:0px; padding-right:0px; padding-top:20px;}
+.ButtonTD2 {padding-top:10px;}
+.ButtonTable {text-align:center; margin-left:auto; margin-right:auto;}
+.CopyTable {margin-left:auto; margin-right:auto; margin-top:auto; margin-bottom:auto;}
+
+/*** Error/Success/Info Box Styles ***/
+.pnlSuccess {border: ridge 2px #00FF00; width:617px; margin-left:auto; margin-right:auto; margin-top:0px; margin-bottom:0px; background-color:#FFFFDE; font-family:Arial; font-size:9pt; color:#000000; font-weight:bold; padding:5px; }
+.pnlMessages {border: ridge 2px #FF0000; width:617px; margin-left:auto; margin-right:auto; margin-top:0px; margin-bottom:0px; background-color:#FFFF96; font-family:Arial; font-size:9pt; color:#000000; font-weight:bold; padding:5px; }
+.pnlInfo {border: ridge 2px #0000FF; width:617px; margin-left:auto; margin-right:auto; margin-top:5px; margin-bottom:0px; background-color:#FFFFDE; font-family:Arial; font-size:9pt; color:#000000; font-weight:bold; padding:5px; }
+.tblInfo {border: ridge 2px #0000FF; width:610px; margin-left:auto; margin-right:auto; margin-top:0px; margin-bottom:0px; background-color:#FFFFDE; font-family:Arial; font-size:9pt; color:#000000; font-weight:bold; padding:5px; }
+.tblInsert {border: ridge 1px #0000FF; width:610px; margin-left:auto; margin-right:auto; margin-top:0px; margin-bottom:0px; background-color:#CCCCCC; font-family:Arial; font-size:9pt; color:#000000; font-weight:bold; padding-top:3px; }
+.pnlMain {margin-top:20px;}
+.pnlLastUpdated {float:right; font-family: arial; font-size: .6em; text-align: left; margin-left: auto; margin-top: -4px; margin-right: 0px; padding-left: 5px; width: 240px; z-index: 1000; background-color: #E5F1FF; border-bottom: solid 1px #CCCCCC; border-right: solid 1px #CCCCCC; border-left: solid 1px #CCCCCC; border-top: solid 1px #CCCCCC; color: #000000;}
+.pnlPayment {margin-left:auto; margin-right:auto; width:500px; border:solid 1px #CCCCCC;}
+.messageItem {margin-left:15px; margin-bottom:5px;}
+.ReleasedIndTD  {background-color:#FEFEDD; border:solid 1px #CCCCCC; font-family:Arial; font-size:0.9em; color:#FF0000; font-weight:bold; padding-left:5px;}
+.TotalPaymentTD  {background-color:#FEFEDD; font-family:Arial; font-size:0.9em; color:#FF0000; font-weight:bold; padding:5px; text-align:center;}
+
+/*** Common GridView Styles ***/
+.gvLookup {width:610px; margin-left:auto; margin-right:auto; margin-top:0px;}
+.gvTable {width:610px; margin-left:auto; margin-right:auto; margin-top:0px;}
+.gvHeader {padding-left:4px; background-color:#739EC6; font-weight:bold; color:#FFFFFF; font-family:arial; font-size:.75em;}
+.gvHeader2 {padding-left:4px; background-color:#739EC6; font-weight:bold; color:#FFFFFF; font-family:arial; font-size:1em;}
+.gvRow {background-color:#F3F3F3; color:#646464; font-family:Arial; font-size:.75em; }
+.gvAltRow {background-color:#FFFFFF; color:#646464; font-family:Arial; font-size:.75em; }
+.gvPager {background-color:#B0C4DE;color:#FFFFFF; font-weight:bold; font-family:Arial; font-size:.9em; text-align:center; margin-right:auto; margin-left:auto; }
+.gvPager table {text-align:right; margin-left:auto; margin-right:auto;}
+.gvCol200 {text-align:left; width:200px; padding-left:5px;}
+.gvCol400 {text-align:left; width:400px; padding-left:5px;}
+.gvFooter {background-color:#C8C8C8; color:#FFFFFF; font-weight:bold;}
+.gvDataCenter {text-align:center;}
+.gvDataRight {text-align:right; padding-right:3px;}
+.gvDataLeft {text-align:left; padding-left:3px;}
+.gvDataLeft150 {text-align:left; padding-left:3px; width:150px;}
+.gvLabelBold    {font-weight:bold;}
+.gvBox1 {color:#4682B4; width:50px; border: solid 1px #7F9DB9;}
+.gvBox2 {color:#4682B4; width:100px; border: solid 1px #7F9DB9;}
+.gvBox3 {color:#4682B4; width:190px; border: solid 1px #7F9DB9;}
+.gvBox4 {background-color:#E0E0E0; color:#4682B4; width:140px; border: ridge 1px #7F9DB9;}
+.gvBox5 {color:#4682B4; width:260px; border: solid 1px #7F9DB9;}
+.gvBox6 {color:#4682B4; width:60px; border: solid 1px #7F9DB9;}
+.gvBox7 {color:#4682B4; width:30px; border: solid 1px #7F9DB9;}
+.gvBox40 {color:#4682B4; width:40px; border: solid 1px #7F9DB9;}
+.gvBox50 {color:#4682B4; width:50px; border: solid 1px #7F9DB9;}
+.gvBox80 {color:#4682B4; width:80px; border: solid 1px #7F9DB9;}
+.gvBox80R {text-align:right; padding-right:3px; color:#4682B4; width:80px; border: solid 1px #7F9DB9;}
+.gvBox100 {color:#4682B4; width:100px; border: solid 1px #7F9DB9;}
+.gvBox100R {text-align:right; padding-right:3px; color:#4682B4; width:100px; border: solid 1px #7F9DB9;}
+.gvBox150 {color:#4682B4; width:150px; border: solid 1px #7F9DB9;}
+.gvBox180 {color:#4682B4; width:180px; border: solid 1px #7F9DB9;}
+.gvBox200 {color:#4682B4; width:200px; border: solid 1px #7F9DB9;}
+.gvBox300 {color:#4682B4; width:300px; border: solid 1px #7F9DB9;}
+.gvBox330 {color:#4682B4; width:330px; border: solid 1px #7F9DB9;}
+
+/*** Custom GridView Header/Pager Styles - To override existing Anchor style ***/
+tr.gvHeader a:visited {color:#FFFFFF; font-weight:bold;}
+tr.gvHeader a:link {color:#FFFFFF; font-weight:bold;}
+tr.gvHeader a:hover {color:#FFFF00; font-weight:bold;}
+tr.gvPager a:visited {color:#FFFFFF; font-weight:normal;}
+tr.gvPager a:link {color:#FFFFFF; font-weight:normal;}
+tr.gvPager a:hover {color:#FFFF00; font-weight:normal;}
+
+/*** CUSTOM CLASSES FOR SEARCH COLUMN WIDTHS - To keep columns from resizing every page ***/
+
+
+.hBASNursingHome {vertical-align:bottom; padding-bottom:2px; padding-left:3px; width:210px;}
+.hBASBANo        {vertical-align:bottom; padding-bottom:2px; padding-left:3px; width:60px;}
+.hBASDescription {vertical-align:bottom; padding-bottom:2px; padding-left:3px; width:285px;}
+.hBASInfo        {vertical-align:bottom; padding-bottom:2px; padding-left:3px; width:25px;}
+
+.hPSNursingHome {vertical-align:bottom; padding-bottom:2px; padding-left:3px; width:295px;}
+.hPSPaymentDate {vertical-align:bottom; padding-bottom:2px; padding-left:3px; width:100px;}
+.hPSPayDocNo    {vertical-align:bottom; padding-bottom:2px; padding-left:3px; width:90px;}
+.hPSFiscalYear  {vertical-align:bottom; padding-bottom:2px; padding-left:3px; width:90px;}
+.hPSInfo        {vertical-align:bottom; padding-bottom:2px; padding-left:3px; width:25px;}
+
+.hRSFiscalYear {vertical-align:bottom; padding-bottom:2px; padding-left:3px; width:100px;}
+.hRSReserveCode {vertical-align:bottom; padding-bottom:2px; padding-left:3px; width:120px;}
+.hRSReserveName    {vertical-align:bottom; padding-bottom:2px; padding-left:3px; width:225px;}
+.hRSBudgetAmount  {vertical-align:bottom; padding-bottom:2px; padding-left:3px; width:130px;}
+.hRSInfo        {vertical-align:bottom; padding-bottom:2px; padding-left:3px; width:25px;}
+
+.hNHBSFiscalYear {vertical-align:bottom; padding-bottom:2px; padding-left:3px; width:100px;}
+.hNHBSNursingHomeCode {vertical-align:bottom; padding-bottom:2px; padding-left:3px; width:100px;}
+.hNHBSNursingHomeName    {vertical-align:bottom; padding-bottom:2px; padding-left:3px; width:275px;}
+.hNHBSEffectiveDate  {vertical-align:bottom; padding-bottom:2px; padding-left:3px; width:100px;}
+.hNHBSInfo        {vertical-align:bottom; padding-bottom:2px; padding-left:3px; width:25px;}
+
+
+
+.hRevNursingHome {vertical-align:bottom; padding-bottom:2px; padding-left:3px; width:150px;}
+.hRevYear {text-align:center; vertical-align:bottom; padding-bottom:2px; width:35px;}
+.hRevMonth {text-align:center; vertical-align:bottom; padding-bottom:2px; width:40px;}
+.hRevPPCount {text-align:center; width:35px;}
+.hRevPPRevenue {text-align:center; vertical-align:bottom; padding-bottom:2px; width:75px;}
+.hRevSCount {text-align:center; width:35px;}
+.hRevSRevenue {text-align:center; vertical-align:bottom; padding-bottom:2px; width:75px;}
+.hRevTCount {text-align:center; width:35px;}
+.hRevTRevenue {text-align:center; vertical-align:bottom; padding-bottom:2px; width:75px; text-align:center;}
+
+.hAMAccountNum  {text-align:center; width:80px; padding-bottom:2px; vertical-align:bottom;}
+.hAMAccountDesc {text-align:left; padding-left:5px; width:270px; padding-bottom:2px; vertical-align:bottom;}
+.hAMAccountType {text-align:left; padding-left:5px; width:100px; padding-bottom:2px; vertical-align:bottom;}
+.hAMInactive    {text-align:center; width:60px; padding-bottom:2px; vertical-align:bottom;}
+.hAMAction  {text-align:center; width:60px; padding-bottom:0px; padding-top:2px; vertical-align:middle;}
+.hAMInsert  {text-align:center; padding-bottom:2px; vertical-align:middle; text-align:center;}
+
+.hPayBANum  {text-align:left; padding-left:5px; width:80px; padding-bottom:2px; vertical-align:bottom;}
+.hPayBADesc {text-align:left; padding-left:5px; width:400px; padding-bottom:2px; vertical-align:bottom;}
+.hPayBAAmount {text-align:right; padding-right:5px; width:100px; padding-bottom:2px; vertical-align:bottom;}
+
+.hPayLSLumpSum {text-align:right; padding-right:5px; width:110px; padding-bottom:2px; vertical-align:bottom;}
+.hPayLSReserveCode {text-align:left; padding-left:5px; width:90px; padding-bottom:2px; vertical-align:bottom;}
+.hPayLSDescription {text-align:left; padding-left:5px; width:315px; padding-bottom:2px; vertical-align:bottom;}
+.hPayAction  {text-align:center; width:60px; padding-bottom:0px; padding-top:2px; vertical-align:middle;}
+.hPayLSInfo  {text-align:center; width:25px; padding-bottom:0px; padding-top:2px; vertical-align:middle;}
+
+.hBAAccountNum  {text-align:center; width:55px; padding-bottom:2px; vertical-align:bottom;}
+.hBADetailDesc {text-align:left; padding-left:5px; width:215px; padding-bottom:2px; vertical-align:bottom;}
+.hBADetailDesc2 {text-align:left; padding-left:5px; width:270px; padding-bottom:2px; vertical-align:bottom;}
+.hBAAmount {text-align:right; padding-right:5px; width:90px; padding-bottom:2px; vertical-align:bottom;}
+.hBARefNum    {text-align:center; width:55px; padding-bottom:2px; vertical-align:bottom;}
+.hBARecurring    {text-align:center; width:40px; padding-bottom:2px; vertical-align:bottom;}
+.hBAReserveCD    {text-align:center; width:60px; padding-bottom:2px; vertical-align:bottom;}
+.hBAAction  {text-align:center; width:60px; padding-left:2px; padding-bottom:0px; padding-top:2px; vertical-align:middle;}
+.hBAInsert  {text-align:center; width:60px; padding-bottom:0px; vertical-align:middle; text-align:center;}
+.hBAInfo  {text-align:center; width:25px; padding-bottom:2px; vertical-align:middle; text-align:center;}
+
+.tdBATotalLabel {width:500px; text-align:right; padding-right:5px; color:#000000; font-family:Arial; font-weight:bold; font-size:.9em; margin-left:auto; margin-right:0px;}
+.tdBATotal {width:100px; text-align:right; padding-right:5px; font-family:Arial; font-size:.9em; color:#000000; margin-left:auto; margin-right:0px;}
+.TotalTable {margin-left:auto; margin-right:auto; background-color:#EFEFFF; width:610px; border-bottom: solid 1px #7F9DB9; border-top: solid 1px #5D7B9D; border-left: solid 1px #7F9DB9; border-right: solid 1px #7F9DB9;}
+.TopTotalTxt {font-family:arial; font-size:.8em; text-align:right; margin-left:auto; margin-top:-8px; margin-right:0px; padding-right:5px; width:300px; height:20px; background-color:#FEFEDD; color:#000000; border-bottom:solid 1px #CCCCCC; border-right:solid 1px #CCCCCC; border-left:solid 1px #CCCCCC;}
+.infoImg {margin-left:auto; margin-right:auto; text-align:center;}
+
+.WelcomeLabelTD {width:100px; font-weight: bold; font-size: .8em; color: black; text-align: right; padding-right: 8px;}
+.WelcomeTextTD {font-family: Arial; font-size: .8em; color: Navy; font-weight: bold}
+.WelcomeHeaderDIV1 {width:280px; margin-left:auto; margin-right:auto; height:50px; background: url('classic/img/UnReleased.jpg');}
+.WelcomeHeaderDIV2 {width:280px; margin-left:auto; margin-right:auto; height:50px; background: url('classic/img/Released.jpg');}
+.WelcomeHeaderDIV3 {width:280px; margin-left:auto; margin-right:auto; height:50px; background: url('classic/img/NonPaidBAs.jpg');}
+.WelcomeHeaderDIV4 {width:280px; margin-left:auto; margin-right:auto; height:50px; background: url('classic/img/Revenues.jpg');}
+.WelcomeHeaderTextDIV {font-size:.82em; font-weight:bold; color:#FFFFFF; font-family:Arial; margin-left:60px; margin-top:15px;}
+.WelcomeContentTable {margin-left:auto; margin-right:auto; margin-top:20px;}
+.WelcomeContentDIV {width: 280px; margin-left: auto; margin-right: auto; height: 70px;  background: url('classic/img/BoxBG.jpg') #DEDEDE; background-repeat:no-repeat;}
+
+.spacer {height:15px;}
+.spacer2 {height:25px;}
+#wrapper {
+  width:900px;
+  clear:both;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;  
+
+}
+
+
+#menuitemlink A:link {
+color: #FFFFFF;
+
+}
+
+#menuitemlink A:visited {
+color: #FFFF33;
+}
+
+#navitemlink A:link {
+color: #FFFFFF;
+
+}
+
+#navitemlink A:visited {
+color: #FFFF33;
+}
+
+#mainwindow {
+    /*border-radius: 25px;
+    box-shadow: 5px 5px;
+    border: 2px solid grey;*/
+    padding: 20px; 
+    /*Original width*/
+    /*width: 775px;*/
+    width: 1000px;
+   /*height: 250px; */ 
+}
+
+
+.menuitem {
+	list-style-type: none;   
+	color:white; 
+	float: left;
+background-color:SteelBlue
+   }
+
+
+.navitem {
+	list-style-type: none;   
+	color:white; 
+	float: left;
+   }
+
+.MenuitemTitle
+{
+    list-style-type: none;   
+	color:steelblue; 
+	float: left;
+    background-color:white;
+    width:100%;
+    text-align:center;
+    font-weight:bold;
+
+}
+
+.MenuitemHeader
+{
+    list-style-type: none;   
+	color:white; 
+	float: left;
+    background-color:steelblue;
+    text-align:center;
+    width:100%;
+     font-weight:bold;
+     font-size:small;
+     line-height:normal;
+     padding-top:10px;
+     padding-bottom:10px;
+
+}
+
+.MenuitemList
+{
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    list-style-position:outside;
+    
+}
+.MenuitemSpace
+{
+  
+	float: left;
+    background-color:white;
+    width:100%;
+    text-align:center;
+    font-weight:bold;
+    height:40px;
+    
+}
+.Menuitem
+{
+    list-style-type: none;   
+	color:steelblue; 
+	float: left;
+    background-color:white;
+    text-align:center;
+    width:100%;
+    padding: 0;
+    margin: 0;
+     font-weight:initial;
+     font-size:small;
+}
+
+.menuLogOut
+{
+     
+	color:steelblue; 
+	float: left;
+    background-color:white;
+    text-align:left;
+    width:96%;
+    padding: 0;
+    padding-left:5px;
+    margin: 0;
+     font-weight:initial;
+     font-size:small;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    color:white;
+    text-align:center;
+    
+}
+li {
+   /* float: left;*/
+}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;    
+}
+ section {
+    width:350px;
+    float:left;
+     padding:10px; 
+}
+footer {
+    color:black;
+    font-size: 80%;
+    clear:both;
+     text-align:center;
+     padding:5px; 
+} 
+aside {
+    BACKGROUND-COLOR: SteelBlue;
+    line-height:30px;
+    height:700px;
+    width:125px;
+    float:left;
+    padding:5px;	      
+}
+
+main {
+    /*height:300px;*/
+    width:500px;
+    float:left;
+    padding:5px;	
+    color:steelblue;
+     FONT-FAMILY: 'Times New Roman',Verdana, Helvetica, sans-serif;
+     font-size: initial;
+     /*font-weight:bold;*/   
+           
+}
+
+.parameterTable
+{
+    width:100%;
+
+}
+
+.LabelColumnTD
+{
+    width:200px;
+    text-align:left;
+
+}
+.ButtonTable
+{
+    width:200px;
+
+}
+
+.RequestIDColumn
+{
+    display:none;
+}
+
+.IDColumn
+{
+    display:none;
+}
+
+.gvTable
+{
+    width:100%;
+
+}
+.gvTable .dateColumn
+{
+    width:75px;
+    text-align:center;
+ }
+
+.CodeTableItemlist
+{
+    list-style-type:none;
+    padding-top:15px;
+
+}
+
+.ReportItemlist
+{
+    list-style-type:none;
+    padding-top:15px;
+
+}
+
+.pnlMessages 
+{
+    color:red;
+}
+.pnlInfo 
+{
+}
+
+.pnlSuccess
+{
+    
+}
+
+.ErrorMessage
+{
+    color:red;
+}
+
+.ErrorMessageMultiple
+{
+    color:red;
+  float:left;
+    clear:both;
+
+
+}
+
+.CRUDMenu
+{
+
+border-style: groove;
+}
+
+.CRUDButton{
+ 
+background-color: #FFFFFF;
+border: 4px #808080 outset;
+padding: 1px 4px;
+width:97px;
+color: SteelBlue;
+text-decoration: none;
+font: bold 90% "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+cursor:pointer;
+
+
+}
+
+.CRUDButton_disabled{
+background-color: #FFFFFF;
+border: 4px #808080 outset;
+padding: 1px 4px;
+width:97px;
+color: darkgray;
+text-decoration: none;
+font: bold 90% "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+opacity: 0.6;
+cursor: not-allowed;
+}
+
+
+.CRUDButton:hover{
+border-style:ridge
+background-color: #e3f48e;
+color:blue;
+padding: 2px 3px 0 5px; /*shift text 1px to the right and down*/
+
+}
+
+
+.SearchDotButton{
+ 
+background-color: #FFFFFF;
+border: 4px #808080 outset;
+padding: 1px 3px;
+width:40px;
+color: SteelBlue;
+text-decoration: none;
+font: bold 90% "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+cursor:pointer;
+
+
+}
+
+.SearchDotButton_disabled{
+background-color: #FFFFFF;
+border: 4px #808080 outset;
+padding: 1px 3px;
+width:40px;
+color: darkgray;
+text-decoration: none;
+font: bold 90% "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+opacity: 0.6;
+cursor: not-allowed;
+}
+
+
+.SearchDotButton:hover{
+border-style:ridge;
+background-color: #e3f48e;
+color:blue;
+padding: 2px 3px 0 5px; /*shift text 1px to the right and down*/
+
+}
+
+
+.CaregiversSOLgridhead th{
+    padding: 5px 30px 5px 30px;
+
+}
+
+.CaregiversSOLgridhead{
+background-color: white;
+border: 0px solid black;
+height: 25px;
+text-align: left;
+
+border-bottom: 1px solid Black;
+
+}
