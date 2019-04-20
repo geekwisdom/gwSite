@@ -1,0 +1,428 @@
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Lobster|Open+Sans:300,400,600,700,800");
+
+/*
+	Geek Wisdom Themeable Template
+	Released for free under the Creative Commons Attribution 3.0 license (https://creativecommons.org/licenses/by/3.0/)
+*/
+
+/* Reset */
+
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+
+
+/* Common Styles for Basic HTML Tags */
+
+	body {
+		font-family:chaparral-pro,sans-serif !important;
+		line-height: 1;
+		-webkit-text-size-adjust: none;
+		overflow: hidden;
+		background-color: #191E28;
+	        color: white;
+
+	}
+
+	ol, ul {
+		list-style: none;
+	}
+
+	blockquote, q {
+		quotes: none;
+	}
+
+	blockquote:before, blockquote:after, q:before, q:after {
+		content: '';
+		content: none;
+	}
+
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+
+/**** HTML5 STYLES ****/
+/**********************/
+
+main {
+
+    position:relative;
+    top:70px;
+    width:55%;
+    max-height:500px;
+    float:left;
+    padding:5px;
+    overflow-y: auto;	
+           
+}
+
+
+ section {
+    width:350px;
+    float:left;
+     padding:10px; 
+}
+footer {
+    position:relative;
+    bottom: -100px;
+    color:green;
+    font-size: 80%;
+    clear:both;
+    text-align:center;
+     padding:5px; 
+} 
+
+
+/* Main Header at top of page */
+.HeaderDiv {
+
+background-image: url('gw_theme/img/gwbanner.png');
+width:100%;
+height:100px; 
+background-color:transparent; 
+background-repeat:no-repeat; 
+border-bottom: 1px solid #D0D0D0;
+left:0px; 
+top:0px;
+
+}
+
+.HeaderTitle {
+font-size:1.1em; 
+color:green; 
+font-weight:bold; 
+text-align:center; 
+margin-top:10px; 
+margin-bottom:10px;
+}
+.HeaderSubTitle {
+font-size:.9em; 
+color:green; 
+font-weight:bold; 
+text-align:center; 
+margin: 0px 0px 8px 0px}
+
+/* Styles for the TOP NAVIAGTION BAR */
+
+nav {
+overflow: hidden;
+  background-color: rgba(21,25,33,.9);
+  position: fixed; /* Set the navbar to fixed position */
+  top: 112px; /* Position the navbar at the top of the page */
+  left: 128px;
+  padding: 10px;
+  width: 100%; /* Full width */
+
+}
+
+.topmenu ul {
+list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color:white;
+  font-size:18px;
+  border-top:4px solid transparent;
+  transition: padding .4s ease;
+  opacity: 0.5;
+}
+
+.topmenu li { float: left; }
+
+.topmenu li a {
+display: block;
+  color: green;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topmenu li a:hover:not(.selected) {
+  background-color: #621212;
+  text-shadow: none;
+  color:white;
+  border-radius: 5px;
+}
+
+li.selected a {
+  background-color: #4CAF50;
+  color:white;
+  border-radius: 4px;
+
+}
+
+
+
+/*****************************************************************/
+/* Styles for the SIDE MENU BAR					*/
+
+
+aside {
+    
+    position:relative;
+    background-color: rgba(21,25,33,.9);
+    line-height:30px;
+    width:125px;
+    float:left;
+    padding:5px;
+    transition: 0.5s;
+}
+
+
+
+li {
+ display: block;
+ transition-duration: 0.5s;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+
+
+
+
+.MenuitemTitle
+{
+    
+    padding-top:12px;
+    list-style-type: none;   
+	color:#3D4351;
+    	float: left;
+        width:100%;
+    text-align:center;
+    font-weight:bold;
+
+}
+
+.MenuitemHeader
+{
+    
+
+    list-style-type: none;   
+    float: left;
+    text-align:center;
+    width:100%;
+     font-weight:bold;
+     font-size:small;
+     line-height:normal;
+     padding-top:30px;
+     padding-bottom:10px;
+
+}
+
+.MenuitemList
+{
+    
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    list-style-position:outside;
+    
+}
+.MenuitemSpace
+{
+  
+	float: left;
+
+    width:100%;
+    text-align:center;
+    font-weight:bold;
+    height:40px;
+    
+}
+.Menuitem
+{
+    list-style-type: none;   
+    float: left;
+    text-align:center;
+    width:100%;
+    padding: 0;
+    margin: 0;
+    font-weight:initial;
+    font-size:small;
+}
+
+.MenuitemList li a
+ {
+display: block;
+    color:green;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+
+ }
+
+.MenuitemList li a
+ {
+ text-decoration:none;
+ }
+
+.MenuitemList li a:hover:not(.active) {
+  background-color: lightgrey;
+
+}
+
+
+.menuLogOut
+{
+     
+float: left;
+    background-color:white;
+    text-align:left;
+    width:96%;
+    padding: 0;
+    padding-left:5px;
+    margin: 0;
+     font-weight:initial;
+     font-size:small;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    
+    color:white;
+    text-align:center;
+    
+}
+li {
+   /* float: left;*/
+}
+
+
+/************************************************************/
+/* MODERN BROWSER STYELS                                    */
+/************************************************************/
+
+div {
+display: block;
+}
+p {
+
+ display: block;
+ margin-top: 1em;
+ margin-bottom: 1em;
+ margin-left: 0;
+ margin-right: 0; 
+}
+h1 {
+display: block;
+ font-size: 2em;
+ margin-top: 0.67em;
+ margin-bottom: 0.67em;
+ margin-left: 0;
+ margin-right: 0;
+ font-weight: bold;
+ }
+
+h2 {
+display: block;
+font-size: 18px;
+ margin-top: 0.83em;
+ margin-bottom: 0.83em;
+ margin-left: 0;
+ margin-right: 0;
+ font-weight: bold;
+}
+
+h3  {
+
+display: block;
+ font-size: 1.17em;
+ margin-top: 1em;
+ margin-bottom: 1em;
+ margin-left: 0;
+ margin-right: 0;
+ font-weight: bold;
+}
+
+/************************************************************/
+/* STYLSE FOR REALLY OLD BROWSERS OR IF JAVASCRIPT DISABLED */
+/************************************************************/
+.oldStyle
+ {
+position:relative;
+background-image:none;
+background-color:#C0C0C0;
+color:black;
+ }
+
+div.oldStyle 
+ {
+position:absolute;
+  top:0px;
+  width:100%;
+  height:100vh;
+  min-height: 100%; 
+ }
+a.oldStyle:link { color:pink; }
+a.oldStyle:hover { color:blue; }
+a.oldStyle.a:active { color:green; }
+a.oldStyle.a:visited { color:pink; }
+
+
+h1.oldStyle {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+
+h2.oldStyle {
+display: block;
+font-size: 1.5em;
+margin-top: 0.83em;
+margin-bottom: 0.83em;
+margin-left: 0;
+margin-right: 0;
+font-weight: bold;
+}
+
+p.oldStyle {
+display: block;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 0;
+margin-right: 0;
+}

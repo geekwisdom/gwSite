@@ -1,0 +1,9 @@
+TAG_LINE = Be Proud of Your Inner Geek
+TITLE = Be Proud of Your Inner Geek - Home
+SITE_URL = https://geekwisdom.org
+SITE_RSS = http://blog.geekwisdom.org/feeds/posts/default?alt%3Drss
+AUTHOR = Brad Detchevery
+DESCRIPTION = "Misson: To seek out new Gadgets and Gizmos, to boldly go where no Geek has gone before!"
+SITENAME = Be Proud of Your Inner Geek - #GeekWisdom
+OG_IMAGE= http://geekwisdom.org/styles/gwlogosmall.png
+TWITTER_NAME = @TrueGeekWisdom
