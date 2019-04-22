@@ -1,0 +1,4 @@
+CheckSpelling Off
+RewriteEngine On
+RewriteBase /
+RewriteRule ^gwbanner.png$ bannerimg.php?fontsize=12&bannername=gwBannerTransBlack.png&fontcolor=000000

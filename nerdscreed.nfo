@@ -1,0 +1,20 @@
+TAG_LINE = Be Proud of Your Inner Geek
+TITLE = "Nerd's Creed - By the Mandi Monster"
+SITE_URL = https://geekwisdom.org
+SITE_RSS = http://blog.geekwisdom.org/feeds/posts/default?alt%3Drss
+PUBLISHER = Brad Detchevery
+AUTHOR = The Mandi Monster
+DESCRIPTION = "Nerd's Creed - By the Mandi Monster"
+SITENAME = "Nerd's Creed - By the Mandi Monster"
+OG_IMAGE= http://geekwisdom.org/vids/nerdscreed.png
+TWITTER_NAME = "@TrueGeekWisdom"
+VIDEOID = LoohIjWBWhg
+VIDEO_HREF = https://hellopoetry.com/poem/975624/nerds-creed/
+VIDEO_ORIG_NAME = "Nerd's Creed Poem"
+VIDEO_IMAGE = http://geekwisdom.org/vids/nerdscreed.png 
+IMAGE_NAME = nerdscreed.png
+LICENSE_HREF = https://hellopoetry.com/TheMandiMonster/
+LICENSE_TEXT = "(c) The Mandi Monster - Used with Permission"
+ATTR_HREF = https://hellopoetry.com/TheMandiMonster/
+ATTR = Hello Poetry
+	

@@ -26,22 +26,14 @@
 /* Common Styles for Basic HTML Tags */
 
 	body {
-		font-family:chaparral-pro,sans-serif !important;
-		line-height: 1;
+		font-size: 15px;
+                font-family: Verdana,sans-serif;
+               color:#000;
 		-webkit-text-size-adjust: none;
 		overflow: hidden;
-		background-color: #191E28;
-	        color: #5DBCD2;
-
+		background-color: #fff;
+		color: #14171a;
 	}
-
-main a  { color:#5DBCD2; }
-main a:link { color:#5DBCD2; }
-main a:hover { color:#00FFFF; }
-main a:active { color:#5DBCD2; }
-main a:visited { color:#5DBCD2; }
-
-
 
 	ol, ul {
 		list-style: none;
@@ -65,17 +57,7 @@ main a:visited { color:#5DBCD2; }
 /**** HTML5 STYLES ****/
 /**********************/
 
-main {
-
-    position:relative;
-    top:70px;
-    width:65%;
-    max-height:500px;
-    float:left;
-    padding:5px;
-    overflow-y: auto;	
-           
-}
+main {position:relative;top: 25px;width:55%;max-height:500px;float:left;padding:5px;overflow-y: auto;}
 
 
  section {
@@ -94,35 +76,32 @@ footer {
 } 
 
 
-/* Standard Tables (eg: used for videos */
-
-.gwTable
-{
-padding: 15px;
-}
-
-.gwTable td
-{
-padding: 5px;
-}
-
-.gwFrameBorder
-{
- border: 1px solid #00FFFF;
-}
-.gwFrameBorder td {
- vertical-align:top;
-}
-.gwTop {
- vertical-align:top;
-}
-
-
-
 /* Main Header at top of page */
-.HeaderDiv {
 
-background-image: url('gw_theme/img/gwbanner.png');
+@-webkit-keyframes FuzzLogo {
+  from {-webkit-filter: blur(30px); -moz-filter: blur(30px);
+-o-filter: blur(30px); -ms-filter: blur(30px); 
+filter: url(#blur); filter: blur(30px);  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');}
+  to {-webkit-filter: blur(0px); -moz-filter: blur(0px);
+-o-filter: blur(0px); -ms-filter: blur(0px); 
+filter: url(#blur); filter: blur(0px);  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');}
+}
+
+@keyframes FuzzLogo {
+  from {-webkit-filter: blur(30px); -moz-filter: blur(30px);
+-o-filter: blur(30px); -ms-filter: blur(30px); 
+filter: url(#blur); filter: blur(30px);  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');}
+  to {-webkit-filter: blur(0px); -moz-filter: blur(0px);
+-o-filter: blur(0px); -ms-filter: blur(0px); 
+filter: url(#blur); filter: blur(0px);  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');}
+}
+
+
+
+.HeaderDiv {
+animation: FuzzLoo 3s 1;
+-webkit-animation: FuzzLogo 3s 1;
+background-image: url('gw_day_theme/img/gwbanner.png');
 width:100%;
 height:100px; 
 background-color:transparent; 
@@ -132,6 +111,8 @@ left:0px;
 top:0px;
 
 }
+
+
 
 .HeaderTitle {
 font-size:1.1em; 
@@ -150,24 +131,14 @@ margin: 0px 0px 8px 0px}
 
 /* Styles for the TOP NAVIAGTION BAR */
 
-nav {
-overflow: hidden;
-  background-color: rgba(21,25,33,.9);
-  position: fixed; /* Set the navbar to fixed position */
-  top: 112px; /* Position the navbar at the top of the page */
-  left: 128px;
-  padding: 10px;
-  width: 100%; /* Full width */
-
-}
+nav {overflow: hidden;background-color: white;position: fixed; /* Set the navbar to fixed position */top: 112px; /* Position the navbar at the top of the page */left: 128px;padding: 10px;width: 100%; /* Full width */}
 
 .topmenu ul {
 list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  color:#00FFFF;
-  font-size:18px;
+  overflow: hidden;  
+  font-size:13px;
   border-top:4px solid transparent;
   transition: padding .4s ease;
   opacity: 0.5;
@@ -175,26 +146,53 @@ list-style-type: none;
 
 .topmenu li { float: left; }
 
-.topmenu li a {
-display: block;
-  color: #5DBCD2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+.topmenu li a {display: block;font-size:13px;color: #262626;text-align: center;padding: 2px 10px;text-decoration: none;
+
 }
 
-.topmenu li a:hover:not(.selected) {
-  background-color: #621212;
-  text-shadow: none;
-  color:#00FFFF;
+.topmenu li a:hover:not(.active) {
+
+   text-shadow: none;
+  font-size:14px;
+  text-decoration:underline;
   border-radius: 5px;
+ -webkit-transition: font-size 2s;
+ -moz-transition:  font-size 2s;
+  -o-transition:  font-size 2s;
+   transition:  font-size 2s;
 }
+
+
 
 li.selected a {
-  background-color: #4CAF50;
-  color:#00FFFF;
-  border-radius: 4px;
+	font-size:14px;
+	text-shadow: none;
+  text-decoration:none;
+  border-bottom: 2px solid black;
+}
 
+
+/* Standard Tables (eg: used for videos */
+
+.gwTable
+{
+padding: 15px;
+}
+
+.gwTable td
+{
+padding: 5px;
+}
+
+.gwFrameBorder
+{
+ border: 1px solid black;
+}
+.gwFrameBorder td {
+ vertical-align:top;
+}
+.gwTop {
+ vertical-align:top;
 }
 
 
@@ -205,13 +203,19 @@ li.selected a {
 
 aside {
     
-    position:relative;
-    background-color: rgba(21,25,33,.9);
-    line-height:30px;
-    width:125px;
-    float:left;
-    padding:5px;
-    transition: 0.5s;
+position:relative;
+    
+background-color: white;
+    
+line-height:30px;
+    
+width:125px;
+    
+float:left;
+    
+padding:5px;
+    
+transition: 0.5s;
 }
 
 
@@ -254,30 +258,43 @@ ul li ul li {
 .MenuitemTitle
 {
     
-    padding-top:12px;
-    list-style-type: none;   
-	color:#3D4351;
-    	float: left;
-        width:100%;
-    text-align:center;
-    font-weight:bold;
-
+padding-top:12px;
+    
+list-style-type: none;
+    
+color: grey !important;
+    
+float: left;
+    
+width:100%;
+    
+text-align:center;
+    
+font-weight:bold;
 }
 
 .MenuitemHeader
 {
     
-    color: #00FFFF;
-    list-style-type: none;   
-    float: left;
-    text-align:center;
-    width:100%;
-     font-weight:bold;
-     font-size:small;
-     line-height:normal;
-     padding-top:30px;
-     padding-bottom:10px;
-
+color: black;
+    
+list-style-type: none;
+    
+float: left;
+    
+text-align:center;
+    
+width:100%;
+    
+font-weight:bold;
+    
+font-size:small;
+    
+line-height:normal;
+    
+padding-top:30px;
+    
+padding-bottom:10px;
 }
 
 .MenuitemList
@@ -302,7 +319,7 @@ ul li ul li {
 }
 .Menuitem
 {
-    list-style-type: none;   
+    list-style-type: none;
     float: left;
     text-align:center;
     width:100%;
@@ -313,14 +330,7 @@ ul li ul li {
 }
 
 .MenuitemList li a
- {
-display: block;
-    color:#5DBCD2;
-  text-align: center;
-  padding: 5px 5px;
-  text-decoration: none;
-
- }
+ {display: block;color: black;text-align: center;padding: 5px 5px;}
 
 .MenuitemList li a
  {
@@ -329,10 +339,10 @@ display: block;
 
 .MenuitemList li a:hover:not(.active) {
 
- background-color: #621212;
-  text-shadow: none;
-  color:#00FFFF;
+   text-shadow: none;
+  text-decoration:underline;
   border-radius: 5px;
+  
 
 }
 
@@ -379,19 +389,18 @@ p {
  margin-left: 0;
  margin-right: 0; 
 }
-h1 {
-color: #00FFFF;
-display: block;
- font-size: 2em;
- margin-top: 0.67em;
- margin-bottom: 0.67em;
- margin-left: 0;
- margin-right: 0;
- font-weight: bold;
- }
+h1 {color: #000;display: block;font-family:"Times New Roman", Times, serif;
+font-size: 38px;margin-top: 0.67em;margin-bottom: 0.67em;margin-left: 0;margin-right: 0;font-weight: bold;
+-webkit-transition: color 2s, font-size 2s;
+       -moz-transition: color 2s, font-size 2s;
+         -o-transition: color 2s, font-size 2s;
+            transition: color 2s, font-size 2s;
+
+}
 
 h2 {
 display: block;
+font-family:"Times New Roman", Times, serif;
 font-size: 18px;
  margin-top: 0.83em;
  margin-bottom: 0.83em;
@@ -402,6 +411,8 @@ font-size: 18px;
 
 h3  {
 
+color:#66757f;
+font-family:"Times New Roman", Times, serif;
 display: block;
  font-size: 1.17em;
  margin-top: 1em;
@@ -436,7 +447,6 @@ a.oldStyle.a:active { color:green; }
 a.oldStyle.a:visited { color:pink; }
 
 
-
 h1.oldStyle {
   display: block;
   font-size: 2em;
@@ -465,3 +475,4 @@ margin-bottom: 1em;
 margin-left: 0;
 margin-right: 0;
 }
+

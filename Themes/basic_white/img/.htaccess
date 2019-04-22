@@ -1,0 +1,14 @@
+ErrorDocument 403 /err/403_Access_Denied.html
+CheckSpelling Off
+RewriteEngine On
+RewriteBase /
+RewriteRule ^level6.html$ level6.php
+RewriteRule ^level7.html$ level7.php
+RewriteRule ^profileimage.jpg$ randimg.php
+RewriteRule ^contactus.html$ contactus.php
+RewriteRule ^/js/common.js$ commonjs.php
+RewriteRule ^/js/prime.js$ primejs.php
+RewriteCond %{REQUEST_URI} ^/games/elfname/(.*)$
+RewriteRule ^(.*) /games/elfnames/%1
+RewriteCond %{REQUEST_URI} ^/go/(.*)$
+RewriteRule ^(.*) /index.php?initcode=%1 [NC,L]
