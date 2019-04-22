@@ -65,7 +65,7 @@ gwSetting.prototype.WriteSetting = function (IName,IValue)
     }
 }
 
-gw.prototype.GetArgument(name)
+gwSetting.prototype.GetArgument = function (name)
 {
 //Parse a URL
 name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
