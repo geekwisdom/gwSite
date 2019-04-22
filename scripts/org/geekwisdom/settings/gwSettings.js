@@ -65,6 +65,20 @@ gwSetting.prototype.WriteSetting = function (IName,IValue)
     }
 }
 
+gw.prototype.GetArgument(name)
+{
+//Parse a URL
+name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+	var regexS = "[\\?&]"+name+"=([^&#]*)";
+	var regex = new RegExp(regexS);
+	var results = regex.exec(window.location.href);
+	if (results == null) {
+		return '';
+	} else {
+		return results[1];
+	}
+}
+
 gwSetting.prototype.GetSetting = function (IName)
 {
     var store = this.supports_html5_storage();
