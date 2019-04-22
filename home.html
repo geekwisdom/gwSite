@@ -8,7 +8,7 @@
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
 </script>
 <![endif]-->
-<link id="MainStyle" rel="stylesheet" type="text/css" href="./themes/gw-theme.css" />
+<link id="MainStyle" rel="stylesheet" type="text/css"  />
 
 <!--  ClickJack /Javascript Helper -->
 <style id="noJavascriptStyle">
@@ -168,7 +168,25 @@ function showMyPage()
         top.location = self.location;
     }
 }
+
+document.onload = new function ()
+{
+mySettings = new gwSetting();
+var theStyle=mySettings.GetArgument("theme");
+if (theStyle == "") theStyle=mySettings.GetSetting("theme");
+if (theStyle == "") theStyle="gw-theme.css";
+if (theStyle != "") 
+ {
+ mySettings.WriteSetting("theme",theStyle);
+var newstyle = document.createElement("link"); // Create a new link Tag
+   newstyle.setAttribute("rel", "stylesheet");
+   newstyle.setAttribute("type", "text/css");
+   newstyle.setAttribute("href", "/themes/" + theStyle + ".css"); // Your .css File
+   document.getElementsByTagName("head")[0].appendChild(newstyle);
+ }
 showMyPage();
+
+}
 </script>
 
 </body>
