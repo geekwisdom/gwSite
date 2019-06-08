@@ -9,7 +9,34 @@ Script Name: gwSettings.js
 Note: Due to the nature of indexdb, and asynchronos calls, the GetSetting Function must have passed in a call back function that is called when the setting is returned.
 **********************************************************************************
 Written By: Brad Detchevery
-Created: Nov 24, 2014
+Created: May 26, 2019
+********************************************************************************
+MIT License [MODIFIED COPYRIGHT NOTICE]
+
+-- BEGIN COPYRIGHT NOTICE --
+Copyright (c) 2019 Brad Detchevery
+This product uses GeekWisdom.org Software, and has been provided FREE OF CHARGE.
+If you like it please consider becoming a Patron at https://patreon.com/GeekWisdom
+-- END COPYRIGHT NOTICE --
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice (text between the -- BEGIN COPYRIGHT NOTICE -- and -- END COPYRIGHT NOTICE --)
+and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
 ********************************************************************************/
 
 
