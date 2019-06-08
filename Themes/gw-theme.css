@@ -150,15 +150,47 @@ margin: 0px 0px 8px 0px}
 
 /* Styles for the TOP NAVIAGTION BAR */
 
-nav {
-overflow: hidden;
-  background-color: rgba(21,25,33,.9);
-  position: fixed; /* Set the navbar to fixed position */
-  top: 112px; /* Position the navbar at the top of the page */
-  left: 128px;
-  padding: 10px;
-  width: 100%; /* Full width */
+nav {overflow: hidden;background-color: white;position: fixed; /* Set the navbar to fixed position */top: 112px; /* Position the navbar at the top of the page */left: 128px;padding: 10px;width: 100%; /* Full width */}
 
+.topnav {
+    width:80%;
+    overflow: hidden;
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-shadow: none;
+  font-size:14px;
+  text-decoration:underline;
+  border-radius: 5px;
+ -webkit-transition: font-size 2s;
+ -moz-transition:  font-size 2s;
+  -o-transition:  font-size 2s;
+   transition:  font-size 2s;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+background-color:#4CAF50;
+color:#fff;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+background-color: #00FFFF;
+color:black;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
 }
 
 .topmenu ul {
@@ -465,3 +497,126 @@ margin-bottom: 1em;
 margin-left: 0;
 margin-right: 0;
 }
+
+
+/* 
+    These are the main styles used in the Geek Wisdom Grid View
+    This needs to be added to gw-day-theme.css and another to gw-theme.css
+*/
+.gwGridTable {
+ font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border:1px solid #ddd;
+    border-top-right-radius:3px;
+}
+.gwGridRow {
+height: 10px;
+vertical-align: bottom;
+text-align: left;
+padding: 8px;
+border-top:1px;
+border-top-right-radius:3px;
+border-bottom: 2px solid #ddd;
+}
+
+.gwGridSelect:active
+{
+ color: #000000;
+ text-decoration: none;
+}
+.gwGridSelect:visited
+{
+ color: #5DBCD2;
+ text-decoration: none;
+}
+.gwGridSelect:hover
+{
+ color: #00FFFF;
+ text-decoration: none;
+}
+
+.gwGridselectedTR
+{
+border-top:1px;
+
+height: 10px;
+ vertical-align: bottom;
+ text-align: left;
+ padding: 8px;
+ border-bottom: 2px solid #ddd;
+ background-color: Orange;
+}
+
+.gwGridview
+{
+height: 10px;
+padding: 8px;
+border-bottom: 2px solid #ddd;
+
+}
+
+.gwGridTR:nth-child(even) {background-color: #191E19;}
+
+.gwGridTR:hover {
+background-color: white;
+}
+
+
+
+.gwGridhead {
+background-color: #191E28;
+height: 10px;
+text-align: left;
+padding: 8px;
+border-bottom: 2px solid #ddd;
+}
+.SOLsearch {
+border: 0px;
+}
+.ErrorMessage
+{
+    position:absolute;
+    left:400px;
+    color:red;
+}
+
+/* Modal Stuff */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
