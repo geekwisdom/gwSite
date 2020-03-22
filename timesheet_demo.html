@@ -1,0 +1,95 @@
+<html>
+<head>
+<script src="./scripts/org/geekwisdom/webui/gwInlineTable.js"></script>
+<style>
+table {
+   width: 80%;
+}
+
+ td {
+   height: 25px;
+   width: 40px;
+} 
+</style>
+</head>
+<body>
+<h1>Geek Wisdom Inline Timesheet Demo</h1>
+<table id="timesheet" border="1">
+<tr>
+<td>Project.</td>
+
+<td>Mon</td>
+
+<td>Tues</td>
+
+<td>Wed</td>
+
+<td>Thurs</td>
+<td>Fri</td>
+
+<td style="width:40px;">Notes</td>
+
+
+</tr>
+
+<tr>
+<td>
+<select name="projectname" id="projectid">
+<option id="1">Project #1</option>
+<option id="2">Project #2</option>
+<option id="3">Project #3</option>
+<option id="4">Project #4</option>
+<option id="5">Project #5</option>
+</td>
+
+<td><input id="Mon" type="text" size="2"></input></td>
+
+<td><input id="Tue" type="text" size="2"></input></td>
+
+<td><input id="Wed" type="text" size="2"></input></td>
+
+<td><input id="Thu" type="text" size="2"></input></td>
+
+<td><input id="Fri" type="text" size="2"></input></td>
+<td style="width:40px"><input id="Notes" type="text" size="25"></input></td>
+</tr>
+
+</table>
+<script type="text/javascript">
+function buildRandomTable(tableid)
+{
+var tbl = document.getElementById(tableid);
+for (var i=1;i<6;i++)
+ {
+ var row = tbl.insertRow(i);
+ for (var j=0;j<7;j++) row.insertCell(j);
+ }
+
+}
+
+
+buildRandomTable("timesheet");
+var colheaders=[];
+colheaders[0]="projectid";
+colheaders[1]="Mon";
+colheaders[2]="Tue";
+colheaders[3]="Wed";
+colheaders[4]="Thu";
+colheaders[5]="Fri";
+colheaders[6]="Notes";
+
+var InlineTable = new gwInLineTable("timesheet",colheaders,onTestUpdate,onAfterUpdate);
+//InlineTable.Init();
+
+function onTestUpdate(rownum)
+{
+return true;
+}
+
+function onAfterUpdate(PriorRow,CurrentRow)
+{
+return true;
+}
+</script>
+</body>
+</html>

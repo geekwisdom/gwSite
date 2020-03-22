@@ -1,0 +1,149 @@
+<html>
+<head>
+<script src="./scripts/org/geekwisdom/webui/gwInlineTable.js"></script>
+<style>
+table {
+   width: 80%;
+}
+
+ td {
+   height: 25px;
+   width: 40px;
+} 
+</style>
+</head>
+<body>
+<h1>Geek Wisdom Inline Table Demo</h1>
+<table id="disburseTbl" border="1">
+<tr>
+<td>No.</td>
+
+<td>Pay Date</td>
+
+<td>Monthly Amount</td>
+
+<td>Adj Amount</td>
+
+<td>Net Amount</td>
+
+<td style="width:40px;">Notes</td>
+
+
+</tr>
+
+<tr style="border:0px solid #ddd;visibility:hidden;">
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td><input id="adjAmount" type="text" size="10"></input></td>
+
+<td>&nbsp;</td>
+
+<td style="width:40px"><input id="Notes" type="text" size="25"></input></td>
+
+
+</tr>
+
+
+</table>
+<table>
+<td><button>Print</button></td>
+</table>
+<script type="text/javascript">
+function buildRandomTable(tableid, disburseAmt)
+{
+var tbl = document.getElementById(tableid);
+for (var i=4;i<16;i++)
+ {
+ var row = tbl.insertRow(i-3);
+
+// Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
+var no = row.insertCell(0);
+var PayDate = row.insertCell(1);
+var MthlyAmt = row.insertCell(2);
+var AdjAmt = row.insertCell(3);
+var NetAmt = row.insertCell(4);
+var Notes = row.insertCell(5);
+
+no.textContent = i-3	;
+if (i <= 9)
+PayDate.textContent = "2020-0" + (i) + "-01";
+else if (i> 9 && i < 13)
+PayDate.textContent = "2020-" + (i) + "-01";
+else
+PayDate.textContent = "2021-0" + (i-12) + "-01";
+
+MthlyAmt.textContent = "$ " + formatMoney(disburseAmt / 12,",",".");
+AdjAmt.textContent="0";
+NetAmt.textContent=MthlyAmt.textContent;
+Notes.textContent=" ";
+
+
+ }
+
+}
+
+function formatMoney(number, decPlaces, decSep, thouSep) {
+decPlaces = isNaN(decPlaces = Math.abs(decPlaces)) ? 2 : decPlaces,
+decSep = typeof decSep === "undefined" ? "." : decSep;
+thouSep = typeof thouSep === "undefined" ? "," : thouSep;
+var sign = number < 0 ? "-" : "";
+var i = String(parseInt(number = Math.abs(Number(number) || 0).toFixed(decPlaces)));
+var j = (j = i.length) > 3 ? j % 3 : 0;
+
+return sign +
+	(j ? i.substr(0, j) + thouSep : "") +
+	i.substr(j).replace(/(\decSep{3})(?=\decSep)/g, "$1" + thouSep) +
+	(decPlaces ? decSep + Math.abs(number - i).toFixed(decPlaces).slice(2) : "");
+}
+
+
+
+buildRandomTable("disburseTbl",45500);
+var colheaders=[];
+colheaders[3]="adjAmount";
+colheaders[5]="Notes";
+var InlineTable = new gwInLineTable("disburseTbl",colheaders,onTestUpdate,onAfterUpdate);
+//InlineTable.Init();
+
+function onTestUpdate(rownum)
+{
+var v1=document.getElementById("adjAmount").value;
+if (v1 =="") v1="0";
+var v=removeMoney(v1);
+if (isNaN(v))
+ {
+ alert ("Sorry must enter a number first!");
+ return false; 
+}
+return true;
+}
+
+function removeMoney(inputText)
+{
+//remove $ and ,
+var newnum = inputText.replace("$","");
+var newnum = newnum.replace(",","");
+var newnum = newnum.replace(" ","");
+newnum=parseFloat(newnum);
+return newnum;
+}
+function onAfterUpdate(PriorRow,CurrentRow)
+{
+if (PriorRow == CurrentRow) return;
+var NetAmt=document.getElementById("disburseTbl").rows[PriorRow].cells[4];
+var AdjAmt=document.getElementById("disburseTbl").rows[PriorRow].cells[3];
+var Monthly=document.getElementById("disburseTbl").rows[PriorRow].cells[2];
+var MonthlyNum = removeMoney(Monthly.textContent);
+var AdjNum = removeMoney(AdjAmt.textContent);
+var newNet = MonthlyNum - AdjNum;
+NetAmt.textContent="$ " + formatMoney(newNet,",",".");
+AdjAmt.textContent="$ " + formatMoney(AdjNum,",",".");
+
+}
+</script>
+</body>
+</html>
