@@ -1,0 +1,18 @@
+<! DOCTYPE html>
+<html>
+<head>
+<title>GeekWisdom Radio</title>
+<!-- needed for IE9 to ensure it treats page as HTML5 properly -->
+<meta http-equiv="X-UA-Compatible" content="IE=9" >
+<script src="./scripts/org/geekwisdom/webui/gwPlsPlayer.js"></script>
+</head>
+<body>
+<h1>GeekWisdom Radio</h1>
+<audio id="audio" controls="controls"></audio >
+<p id="title">item title</p>
+</body>
+<script>
+var plsPlayer = new gwPlsPlayer("audio","geekwisdom.pls");
+plsPlayer.play(); 
+</script>
+</html>
