@@ -79,8 +79,6 @@ var loadPLS = function(whichItem,pls)
      else 
       {
         pls.audio.autoplay = false;
-        
-//	alert (pls.Items[whichItem].file); 
         pls.audio.src = pls.Items[whichItem].file;
          if(pls.Items[whichItem].hasOwnProperty("length"))
          {
@@ -141,6 +139,9 @@ if (Entry.indexOf("=") > 0)
         var tmpItem = {};
 	for(var k in Item) tmpItem[k]=Item[k];
         Items.push(tmpItem);
+        Item["title"]="";
+        Item["file"]="";
+        Item["length"]=-1;
    	nextrecord=false;
 	}
    Item["file"] = parts[1].trim(); 
